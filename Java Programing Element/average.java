@@ -1,5 +1,6 @@
 class average{
 	public static void main(String[] args){
+		int a=0;
 		int Math = 94;
 		int Physics = 95;
 		int Chemistry = 96;
