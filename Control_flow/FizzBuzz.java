@@ -4,11 +4,10 @@ class FizzBuzz {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Take input from user
+
         System.out.print("Enter a positive integer: ");
         int number = scanner.nextInt();
 
-        // Check if input is a positive integer
         if (number > 0) {
             System.out.println("FizzBuzz Output:");
             for (int i = 1; i <= number; i++) {
