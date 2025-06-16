@@ -10,7 +10,7 @@ class MultiplicationTable{
 		}
 		System.out.println("Print the multiplication array : ");
 		for(int i=0;i<10;i++){
-			System.out.println(arr[i]);
+			System.out.println(number +" * " + i+1  +  " = " +  arr[i]);
 		}
 	}
 }
