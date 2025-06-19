@@ -25,7 +25,9 @@ char operation = input.next().charAt(0);
 System.out.print("Enter numbers to perform operation on: ");
 int number1 = input.nextInt();
 int number2 = input.nextInt();
-double result ;
+double result;
+
+
 
 switch (operation){
 case '+' :
