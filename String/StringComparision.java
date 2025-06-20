@@ -14,20 +14,21 @@ public class StringComparision {
         return true;
     }
 
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter first string: ");
+        System.out.print("Enter the first string: ");
         String string1 = input.next();
 
-        System.out.print("Enter second string: ");
+        System.out.print("Enter the second string: ");
         String string2 = input.next();
 
         boolean resultCharAt = compareUsingCharAt(string1, string2);
 
         boolean resultEquals = string1.equals(string2);
 
-        System.out.println("\nComparison using charAt(): " + resultCharAt);
+        System.out.println("Comparison using charAt(): " + resultCharAt);
         System.out.println("Comparison using equals(): " + resultEquals);
 
         if (resultCharAt == resultEquals) {
@@ -36,6 +37,6 @@ public class StringComparision {
             System.out.println("The results of the two methods differ.");
         }
 
-        input.close();
+        
     }
 }
