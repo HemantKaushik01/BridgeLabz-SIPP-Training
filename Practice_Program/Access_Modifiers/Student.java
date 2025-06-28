@@ -64,9 +64,9 @@ public class Student {
 	obj1.cgpaModify(9.07);
 	System.out.println( "Modify CGPA "+ obj1.getCGPA());
 	obj1.display();
-	System.out.println();
-	System.out.println("Details of postgraduate Student :");
-	System.out.println();
+	//System.out.println();
+	System.out.println("\nDetails of postgraduate Student :");
+//	System.out.println();
 	PostGraduateStudent obj2 =obj1.new PostGraduateStudent(2215345,"Anuj",9.99,"Computer Science");
 	obj2.display2();	
 

@@ -24,13 +24,33 @@ package Access_Modifiers;
 }
 
 
-class EBook extends Books {
+ class EBook extends Books {
  private double fileSize;
+ //private String ebookAuthor;
 
  public EBook(String ISBN, String title, String author, double fileSize) {
-     super(ISBN, title, author);
-     this.fileSize = fileSize;
+     super(ISBN, title, author); // use as simple super key word
+     
+     // below the line use for with out super key word
+//	 super("","","");
+//	 Books object = new Books(ISBN,title,author);
+//	 this.ISBN = object.ISBN;
+//     this.title = object.title;
+//     this.ebookAuthor = object.getAuthor();
+//     this.fileSize = fileSize;
+     // Override getter and setter to use local copy
  }
+//     @Override
+//     public String getAuthor() {
+//         return ebookAuthor;
+//     }
+//
+//     @Override
+//     public void setAuthor(String author) {
+//         this.ebookAuthor = author;
+//     }
+
+ 
 
  
  public void showEBookDetails() {
