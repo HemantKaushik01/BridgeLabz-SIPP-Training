@@ -79,6 +79,8 @@ public class VehicleAndTransport {
         Veehicle[] vehicles = new Veehicle[3];
 //        Car obj = new Car(222,"water",3);
 //        obj.displayInfo();
+        
+        
 
         vehicles[0] = new Car(180, "Petrol", 5);
         vehicles[1] = new Truck(120, "Diesel", 10);
