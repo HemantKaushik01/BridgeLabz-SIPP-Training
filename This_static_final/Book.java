@@ -9,10 +9,13 @@ public class Book {
 		this.isbn=isbn;
 		
 	}
+
+
+
 	
 	
 	
-	static String libraryName = "Anuj_Gyan_Sagar";
+	static String libraryName = "Gyan_Sagar";
 	public static void displayLibraryName() {
 		System.out.println("Name of the library: "+libraryName);
 	}
