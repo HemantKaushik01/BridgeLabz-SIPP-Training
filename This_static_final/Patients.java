@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Patient {
+public class Patients {
     String name;
     int age;
     String ailment;
@@ -8,7 +8,7 @@ public class Patient {
     static String hospitalName = "Mathura City Hospital";
     static int totalPatients = 0;
 
-    public Patient(String name, int age, String ailment, int patientID) {
+    public Patients(String name, int age, String ailment, int patientID) {
         this.name = name;
         this.age = age;
         this.ailment = ailment;
@@ -21,7 +21,7 @@ public class Patient {
     }
 
     public void displayDetails() {
-        if (this instanceof Patient) {
+        if (this instanceof Patients) {
             System.out.println("Hospital Name: " + hospitalName);
             System.out.println("Patient ID: " + patientID);
             System.out.println("Name: " + name);
@@ -39,7 +39,7 @@ public class Patient {
         int n = sc.nextInt();
         sc.nextLine();
 
-        Patient[] patients = new Patient[n];
+        Patients[] patients = new Patients[n];
 
         for (int i = 0; i < n; i++) {
             System.out.println("\nEnter details for Patient " + (i + 1));
@@ -57,11 +57,11 @@ public class Patient {
             int patientID = sc.nextInt();
             sc.nextLine();
 
-            patients[i] = new Patient(name, age, ailment, patientID);
+            patients[i] = new Patients(name, age, ailment, patientID);
         }
 
         System.out.println("\n--- Patient Records ---");
-        for (Patient p : patients) {
+        for (Patients p : patients) {
             System.out.println();
             p.displayDetails();
             System.out.println("---------------------------");
