@@ -17,7 +17,7 @@ public class Vehicle {
     }
 
     public void displayDetails() {
-        if (this instanceof Vehicle) {
+        if (this instanceof Vehiclee) {
             System.out.println("Owner Name: " + ownerName);
             System.out.println("Vehicle Type: " + vehicleType);
             System.out.println("Registration Number: " + registrationNumber);
@@ -34,7 +34,7 @@ public class Vehicle {
         int n = sc.nextInt();
         sc.nextLine();
 
-        Vehicle[] vehicles = new Vehicle[n];
+        Vehiclee[] vehicles = new Vehiclee[n];
 
         for (int i = 0; i < n; i++) {
             System.out.println("\nEnter details for Vehicle " + (i + 1));
@@ -48,7 +48,7 @@ public class Vehicle {
             System.out.print("Registration Number: ");
             String regNumber = sc.nextLine();
 
-            vehicles[i] = new Vehicle(ownerName, vehicleType, regNumber);
+            vehicles[i] = new Vehiclee(ownerName, vehicleType, regNumber);
         }
 
         System.out.print("\nDo you want to update the registration fee? (yes/no): ");
@@ -61,7 +61,7 @@ public class Vehicle {
         }
 
         System.out.println("\n--- Vehicle Registration Details ---");
-        for (Vehicle v : vehicles) {
+        for (Vehiclee v : vehicles) {
             System.out.println();
             v.displayDetails();
             System.out.println("-------------------------------");
