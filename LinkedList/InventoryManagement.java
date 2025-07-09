@@ -1,5 +1,3 @@
-package linkedlist;
-
 class ItemDetail{//this class works as a node of linked list
 	String itemName;
 	String itemId;
