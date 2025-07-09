@@ -1,3 +1,4 @@
+import linkedlist.Node;
 
 public class QueueUsingList {
 	private Node front;
