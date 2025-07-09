@@ -1,5 +1,3 @@
-package linkedlist;
-
 class StudentDetail{//it will work as Node of a linkedList with student details
 	String name;
 	int rollNo;
