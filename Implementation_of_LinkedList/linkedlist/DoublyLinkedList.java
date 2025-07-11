@@ -60,9 +60,14 @@ public class DoublyLinkedList {
 				temp=temp.next;
 				
 			}
-			newNode.next=temp.next;
-			temp.next=newNode;
-			newNode.prev=temp;
+			  newNode.next = temp.next;
+		        newNode.prev = temp;
+
+		        if (temp.next != null) {
+		            temp.next.prev = newNode;
+		        }
+		        temp.next = newNode;
+			
 		}
 		size++;
 	}
@@ -98,7 +103,17 @@ public class DoublyLinkedList {
 				curr=curr.next;
 				
 			}
-			curr.next=curr.next.next;
+			 Nodes toDelete = curr.next;           
+		        curr.next = toDelete.next;          
+		        if (toDelete.next != null) {
+		            toDelete.next.prev = curr;     
+		        }
+
+	
+		        toDelete.next = null;
+		        toDelete.prev = null;
+
+		        size--;
 		}
 	}
 	
