@@ -178,20 +178,19 @@ public class MovieManagementSystem {
 	    System.out.println("Displaying all movies (backward):");
 	    mms.displayBackword();
 
-	    // Search for a movie
 	    System.out.println("Searching for 'Inception' with rating 9:");
 	    mms.searchMovie("Inception", 9);
 
-	    // Try searching a movie that doesn't exist
+	 
 	    System.out.println("\nSearching for 'Avatar' with rating 7:");
 	    mms.searchMovie("Avatar", 7);
 
-	    // Remove a movie
+	    
 	    System.out.println("\nRemoving 'The Matrix':");
 	    mms.removeMovie("The Matrix");
 	    mms.updateMovie("Inception", 4);
 
-	    // Display all movies after deletion
+	  
 	    System.out.println("Displaying all movies after deletion:");
 	    mms.displayForward();
 	}
