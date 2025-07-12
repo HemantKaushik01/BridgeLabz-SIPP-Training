@@ -99,6 +99,7 @@ public class MovieManagementSystem {
 				System.out.println("Movie name: "+ MovieTitle+ " rating: "+Rating);
 				return ;
 			}
+			curr=curr.next;
 		}
 		System.out.print("Movie is not found");
 
@@ -161,14 +162,14 @@ public class MovieManagementSystem {
 	    MovieManagementSystem mms = new MovieManagementSystem();
 
 	    
-	    mms.addMovieBackward("Inception", "Christopher Nolan", 2010, 9);
-	    mms.addMovieBackward("The Dark Knight", "Christopher Nolan", 2008, 10);
-	    mms.addMovieBackward("Interstellar", "Christopher Nolan", 2014, 9);
+	    mms.addMovieBackward("Ra-one", "Aditya", 2010, 9);
+	    mms.addMovieBackward("Koi mil gya", "Roshan", 2008, 10);
+	    mms.addMovieBackward("Fun2", "Madhav", 2014, 9);
 
 	    
-	    mms.addMovieForward("Pulp Fiction", "Quentin Tarantino", 1994, 8);
+	    mms.addMovieForward("Raaz", "abc", 1994, 7);
 
-	    mms.addMovieKthPosition("The Matrix", "Wachowskis", 1999, 8, 3);
+	    mms.addMovieKthPosition("adfgg", "altu", 1999, 8, 3);
 
 
 	    System.out.println("Displaying all movies (forward):");
@@ -178,17 +179,18 @@ public class MovieManagementSystem {
 	    System.out.println("Displaying all movies (backward):");
 	    mms.displayBackword();
 
-	    System.out.println("Searching for 'Inception' with rating 9:");
-	    mms.searchMovie("Inception", 9);
+	    System.out.println("Searching for 'Ra-one' with rating 9:");
+	    mms.searchMovie("Ra-one", 9);
 
 	 
-	    System.out.println("\nSearching for 'Avatar' with rating 7:");
-	    mms.searchMovie("Avatar", 7);
+	    System.out.println("\nSearching for 'Raaz' with rating 7:");
+	    mms.searchMovie("Raaz", 7);
 
 	    
-	    System.out.println("\nRemoving 'The Matrix':");
-	    mms.removeMovie("The Matrix");
-	    mms.updateMovie("Inception", 4);
+	    System.out.println("\nRemoving 'Fun2':");
+	    mms.removeMovie("Fun2");
+	    System.out.println("\n Update Movie rating ");
+	    mms.updateMovie("Raaz", 4);
 
 	  
 	    System.out.println("Displaying all movies after deletion:");
