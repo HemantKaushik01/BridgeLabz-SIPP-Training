@@ -21,6 +21,7 @@ public class PairSum {
 			if(map.containsKey(remaining)) {
 				if(remaining == arr[i] && map.get(arr[i])<2) {
 					continue;
+					
 				}
 				System.out.print("Found pair for target value : "+ arr[i]+ " , "+(t-arr[i]));
 				flag=true;
