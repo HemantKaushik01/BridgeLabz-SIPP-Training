@@ -18,6 +18,7 @@ public class QueueUsingStacks {
 		}
 		return st2.pop();
 	}
+	
 	public int peek() {
 		if(isEmpty()) {
 			System.out.print("Queue is empty");
