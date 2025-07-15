@@ -7,6 +7,8 @@ class Pair{
 	}
 }
 
+
+
 public class CustomHashMap {
 	static Pair obj = new Pair(null,-1);
 	Pair[] arr = new Pair[10];
