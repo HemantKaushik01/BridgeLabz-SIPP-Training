@@ -10,6 +10,8 @@ public class StockSpan {
             prices[i] = sc.nextInt();
         }
         
+        
+        
         int[] span = calculateStockSpan(prices);
         
         System.out.println("Stock Span for each day: " + Arrays.toString(span));
