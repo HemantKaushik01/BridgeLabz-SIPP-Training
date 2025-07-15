@@ -17,6 +17,7 @@ public class SlidingWindow {
         
         System.out.println("Maximums in each sliding window: " + result);
     }
+    
     public static List<Integer> maxSlidingWindow(int[] nums, int k) {
         List<Integer> result = new ArrayList<>();
         if (nums == null || nums.length == 0 || k <= 0) {
