@@ -35,6 +35,7 @@ public class TwoSumIndices {
 						
 					}
 				}
+				
 				System.out.println("Found pair for target value : "+ arr[i]+ " , "+(t-arr[i]));
 				System.out.println("Found pair indices of target value : "+ idx1+ " , "+idx2);
 
