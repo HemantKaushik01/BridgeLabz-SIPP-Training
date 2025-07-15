@@ -22,6 +22,7 @@ public class SortAnStack {
         }
     }
 
+    
     static void insertInSortedOrder(Stack<Integer> stack, int element) {
         if (stack.isEmpty() || stack.peek() <= element) {
             stack.push(element);
