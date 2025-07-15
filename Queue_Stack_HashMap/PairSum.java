@@ -15,6 +15,8 @@ public class PairSum {
 			int remaining = t-arr[i];
 			map.put(arr[i],map.getOrDefault(arr[i], 0)+1);
 		}
+		
+		
 		boolean flag= false;
 		for(int i=0;i<n;i++) {
 			int remaining = t-arr[i];
