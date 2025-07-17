@@ -1,4 +1,3 @@
-
 public class RotationPoint {
 	public static void main(String[] args) {
 		int arr[] = {4,4,3,3,0,1,2};
