@@ -15,6 +15,7 @@ class VegetarianMeal implements MealPlan {
     }
 }
 
+
 class VeganMeal implements MealPlan {
     public List<String> getItems() {
         return Arrays.asList("Tofu Stir Fry", "Brown Rice", "Green Smoothie");
