@@ -1,23 +1,69 @@
 package listInterface;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.io.*;
+
+class Node {
+    int data;
+    Node next;
+
+    public Node (int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
 
 public class nthElement {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-	public static void main(String[] args) {
-		int [] arr= {1,33,33,33,2,3,5,4};
-		int n=4;
-		List<Integer> list = new LinkedList<>();
-		for(int i=0;i<arr.length;i++) {
-			list.add(arr[i]);
-			
-		}
-		
-		
-		
-		
+        Node head = null;
+        Node tail = null;
 
-	}
+        System.out.println("\nEnter integers for the linked list. Type -1 to end:");
 
+        while (true) {
+            int val = Integer.parseInt(br.readLine());
+            if (val == -1)
+                break;
+
+            Node nn = new Node(val);
+            if (head == null) {
+                head = tail = nn;
+            }else {
+                tail.next = nn;
+                tail = nn;
+            }
+        }
+
+        System.out.println("\nOG Linked List :");
+        Node temp = head;
+
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("NULL\n");
+
+
+        System.out.print("\nPlease enter the position from the end of the list you'd like to display : ");
+        int k = Integer.parseInt(br.readLine());
+
+        temp = head;
+        for (int i = 0; i < k; i++) {
+            if (temp == null) {
+                System.err.println("NUll : Value out of bounds !!");
+                System.exit(0);
+            }
+            temp = temp.next;
+        }
+
+        Node temp2 = head;
+
+        while (temp != null) {
+            temp = temp.next;
+            temp2 = temp2.next;
+        }
+
+        System.out.println("Value : " + temp2.data);
+    }
 }
