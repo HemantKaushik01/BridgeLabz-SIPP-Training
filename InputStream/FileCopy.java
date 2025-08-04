@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class FileCopy {
     public static void main(String[] args) {
-        // Replace with your file paths
+     
         String sourcePath = "E:\\BRAJLAB\\Java Programs\\InputStream\\file1.txt";
         String destinationPath = "E:\\BRAJLAB\\Java Programs\\InputStream\\file2.txt";
 
