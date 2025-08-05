@@ -22,7 +22,7 @@ class Employee implements Serializable {
     }
 }
 
-public class EmployeeSerializationDemo {
+public class EmployeeSerialization {
     private static final String FILE_NAME = "employees.ser";
 
     public static void main(String[] args) {
