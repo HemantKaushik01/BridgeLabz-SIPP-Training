@@ -4,7 +4,7 @@ import java.util.Map.Entry;
 
 public class WordFrequency {
     public static void main(String[] args) {
-        String fileName = "input.txt"; 
+        String fileName = "E:\\BRAJLAB\\Java Programs\\InputStream\\file1.txt"; 
 
         Map<String, Integer> wordCountMap = new HashMap<>();
 
