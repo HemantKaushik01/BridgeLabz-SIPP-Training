@@ -4,14 +4,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class ExtractCurrencyValues {
 	public static void main(String[] args) {
-		 String regex = "\\$?\\d+(\\.\\d{2})?"; 
+		 String regex = "\\b(\\w+)\\b\\s+\\1\\b"; 
 	        Pattern pattern = Pattern.compile(regex);
-	        String input = "The price is $45.99, and the discount is 10.50.";
+	        String input = "this this is is a repeated  repeated  word test.";
 	        
 	        Matcher matcher = pattern.matcher(input);
 	        
 	        while (matcher.find()) {
-	            System.out.println("Matched: " + matcher.group());
+	            System.out.println("Matched: " + matcher.group(1));
 	        }
 
 	}
