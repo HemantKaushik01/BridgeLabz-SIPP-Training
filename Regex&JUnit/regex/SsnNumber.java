@@ -2,7 +2,7 @@ package regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-public class FindRepeatingWords {
+public class SsnNumber {
 	public static void main(String[] args) {
 		 String regex = "\\b\\d{3}-\\d{2}-\\d{4}\\b"; 
 	        Pattern pattern = Pattern.compile(regex);
