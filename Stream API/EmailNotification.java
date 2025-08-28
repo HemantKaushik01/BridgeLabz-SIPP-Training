@@ -10,3 +10,5 @@ public class EmailNotification {
         emails.forEach(email -> sendEmailNotification(email));
     }
 }
+
+
